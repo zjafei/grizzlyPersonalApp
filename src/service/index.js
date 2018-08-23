@@ -32,7 +32,6 @@ axios.interceptors.response.use(function (response) {
 
 function fetch ({host = '', version = '', url, params, method = 'get'}) {
   const mock = isMock({ host, version, url, params, method });
-
   if (ENV !== 'production' && mock.isMock === true) {
     return new Promise((resolve) => {
       resolve(mock.mock);

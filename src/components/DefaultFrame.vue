@@ -27,6 +27,7 @@
       </Button>
     </UIHeader>
     <slot></slot>
+    <UIFooter slot="footer"></UIFooter>
     <slot slot="modalCon" name="modalCon"></slot>
   </UIFrame>
 </template>
@@ -37,6 +38,7 @@ import { BottomNavItem } from 'muse-ui/lib/BottomNav';
 
 import UIFrame from './UIFrame';
 import UIHeader from './UIHeader';
+import UIFooter from './UIFooter';
 
 export default {
   props: {
@@ -51,7 +53,8 @@ export default {
     UIFrame,
     UIHeader,
     Button,
-    Icon
+    Icon,
+    UIFooter
   },
   methods: {},
   mounted () { }
